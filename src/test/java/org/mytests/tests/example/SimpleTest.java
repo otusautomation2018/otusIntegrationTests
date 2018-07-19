@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import static org.mytests.uiobjects.example.site.JDIExampleSite.homePage;
 import static org.mytests.uiobjects.example.site.JDIExampleSite.login;
 
-public class SimpleTest extends SimpleTestsInit {
+public class SimpleTest extends TestsInit {
 
     @Test
     public void loginTest() {

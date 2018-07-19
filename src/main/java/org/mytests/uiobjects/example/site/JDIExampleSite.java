@@ -3,6 +3,7 @@ package org.mytests.uiobjects.example.site;
 import com.epam.jdi.uitests.web.selenium.elements.common.Label;
 import com.epam.jdi.uitests.web.selenium.elements.composite.WebSite;
 import com.epam.jdi.uitests.web.selenium.elements.pageobjects.annotations.JSite;
+import com.epam.jdi.uitests.web.selenium.elements.pageobjects.annotations.simple.Css;
 import org.mytests.uiobjects.example.entities.User;
 import org.mytests.uiobjects.example.site.pages.HomePage;
 import org.mytests.uiobjects.example.site.sections.LoginForm;
@@ -15,7 +16,7 @@ public class JDIExampleSite extends WebSite {
 
     public static LoginForm loginForm;
 
-    @FindBy(css = ".profile-photo")
+    @Css(".profile-photo")
     public static Label profilePhoto;
 
     @Step
